@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".menu_odp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_blue"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orang Terindikasi Covid-19"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="#FFF"
+                    android:textSize="21dp"/>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="197dp"
+                    android:layout_height="191dp"
+                    android:src="@drawable/fever"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gray"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apa itu OTG, ODP, dan PDP"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#656567"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berikut adalah orang yang terindikasi terpapar virus Covid-19"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#818183"
+                    android:textSize="14dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_gray2"
+                    android:elevation="4dp">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/otg"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="2dp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:text="Orang Tanpa Gejala (OTP)"
+                        android:textColor="#818183"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/poppins_medium" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:textColor="#818183"
+                        android:text="- Tidak ada gejala Covid-19 \n- Memiliki resiko terular
+                            \n- Kontak erat dengan kasus positif"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_marginBottom="5dp"/>
+                </RelativeLayout>
+
+                #BATAS----------------
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_gray2"
+                    android:elevation="4dp">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/odp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="2dp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imageView2"
+                        android:text="Orang Dalam Pantauan (ODP)"
+                        android:textColor="#818183"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/poppins_medium" />
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@+id/imageView2"
+                        android:textColor="#818183"
+                        android:text="- Demam >=38°, Batuk Kering, Pilek, Sakit Tenggorokan
+                        \n- Riwayat perjanan dalam/luar negeri
+                        \n- Riwayat kontak dengan pasien positif Covid-19"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_marginBottom="5dp"/>
+                </RelativeLayout>
+
+                #BATAS----------------
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_gray2"
+                    android:elevation="4dp">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/pdp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="2dp" />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imageView3"
+                        android:text="Pasien Dalam Pengawasan (PDP)"
+                        android:textColor="#818183"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/poppins_medium" />
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@+id/imageView3"
+                        android:textColor="#818183"
+                        android:text="- Demam >=38°, Batuk Kering, Pilek, Sakit tenggorokan, Sesak nafas, Pneunomia
+                        \n- Riwayat perjanan dalam/luar negeri
+                        \n- Riwayat kontak dengan pasien positif Covid-19"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/poppins_regular"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".diagnosa_covid">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_blue"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diagnosa Gejala \nCOVID-19"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="#FFF"
+                    android:textSize="21dp"/>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/detcov"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gray_diagnosa"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lakukan dignosa dini gejala COVID-19 disini!"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#656567"
+                    android:textSize="20dp"/>
+
+                <CheckBox
+                    android:id="@+id/cb_riwayatkontak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Riwayat kontak dengan pasien positif Covid-19"
+                    android:textSize="14dp" />
+                <CheckBox
+                    android:id="@+id/cb_riwayatperjalanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14dp"
+                    android:text="Riwayat perjalanan dalam/luar negeri"/>
+                <CheckBox
+                    android:id="@+id/cb_tidakadagejala"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14dp"
+                    android:text="Tidak merasakan gejala Covid-19"/>
+                <CheckBox
+                    android:id="@+id/cb_demam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14dp"
+                    android:text="Demam >=38°"/>
+                <CheckBox
+                    android:id="@+id/cb_batuk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14dp"
+                    android:text="Batuk Kering"/>
+                <CheckBox
+                    android:id="@+id/cb_pilek"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14dp"
+                    android:text="Pilek"/>
+
+                <CheckBox
+                    android:id="@+id/cb_sakittenggorokan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Sakit Tenggorokan"
+                    android:textSize="14dp" />
+
+                <CheckBox
+                    android:id="@+id/cb_sesaknafas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14dp"
+                    android:text="Sesak nafas"/>
+                <CheckBox
+                    android:id="@+id/cb_pneunomia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_gray3"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="14dp"
+                    android:text="Pneunomia (Radang Paru-paru)"/>
+                <Button
+                    android:id="@+id/btn_hasildiagnosa"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bg_button_berubah"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14dp"
+                    android:textColor="#FFF"
+                    android:text="Diagnosa Gejala"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_gray_berita"
+                    android:elevation="2dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dari diagnosa gejala Covid-19 yang diinputkan\nAnda Termasuk Kategori : "
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingTop="5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="#444445"
+                        android:textSize="14dp"/>
+                    <TextView
+                        android:id="@+id/hasildiagnosa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingBottom="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="#444445"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_gray_berita"
+                    android:elevation="2dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Analisa"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="#443C8F"
+                        android:textSize="25dp"/>
+                    <TextView
+                        android:id="@+id/tv_analisa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="#444445"
+                        android:textSize="14dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

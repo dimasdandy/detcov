@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".menu_penularan">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bg_blue"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COVID-19 Test"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="#FFF"
+                    android:textSize="21dp"/>
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="197dp"
+                    android:layout_height="191dp"
+                    android:src="@drawable/test"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gray"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apa saja Test COVID-19?"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="24dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="#656567"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dibawah ini adalah penjelasan tentang rapid dan swab test"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#818183"
+                    android:textSize="14dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_gray2"
+                    android:elevation="4dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageView"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/rapidicon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="2dp">
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:text="Rapid Test"
+                        android:textColor="#818183"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins_medium" />
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:textColor="#818183"
+                        android:text="- Spesimen yang diperiksa adalah darah pasien
+                        \n- Pengecekan kondisi Imun tubuh, Jika tubuh terinfeksi virus maka imun akan meningkat
+                        \n- Waktu pengujian 10-15 menit
+                        \n- Digunakan untuk screening/deteksi dini"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/poppins_regular"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_gray2"
+                    android:elevation="4dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_margin="5dp"
+                        android:id="@+id/imageView2"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/swabtest"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="2dp">
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imageView2"
+                        android:text="Swab Test"
+                        android:textColor="#818183"
+                        android:textSize="17dp"
+                        android:fontFamily="@font/poppins_medium" />
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toEndOf="@+id/imageView2"
+                        android:textColor="#818183"
+                        android:text="- Spesimen yang diperiksa adalah lendir yang diambil dari tenggorokan
+                        \n- Analisis virus dengan metode PCR yang dapat mendeteksi langsung Covid-19
+                        \n- Waktu pengujian 2-4 hari
+                        \n- Metode paling akurat untuk mendeteksi Covid-19"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/poppins_regular"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
